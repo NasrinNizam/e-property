@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.401" height="23.827" viewBox="0 0 21.401 23.827">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#006565"/>
+      <stop offset="1" stop-color="#00a8a8"/>
+    </linearGradient>
+  </defs>
+  <g id="user-1_curved" transform="translate(-7 -5)">
+    <path id="Path_30" data-name="Path 30" d="M24.37,37.882H11.031A4.036,4.036,0,0,1,7,33.85c0-1.741.765-4.051,4.407-5.166a21.212,21.212,0,0,1,6-.684H18a21.214,21.214,0,0,1,6,.684C27.637,29.8,28.4,32.109,28.4,33.85A4.036,4.036,0,0,1,24.37,37.882ZM17.4,30C11.67,30,9,31.223,9,33.85a2.034,2.034,0,0,0,2.031,2.031H24.37A2.034,2.034,0,0,0,26.4,33.85c0-2.627-2.67-3.85-8.4-3.85H17.4Z" transform="translate(0 -9.055)" fill="url(#linear-gradient)"/>
+    <path id="Path_31" data-name="Path 31" d="M20.85,16.7a5.85,5.85,0,1,1,5.85-5.85A5.857,5.857,0,0,1,20.85,16.7Zm0-9.7a3.85,3.85,0,1,0,3.85,3.85A3.855,3.855,0,0,0,20.85,7Z" transform="translate(-3.15)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
