@@ -21,11 +21,9 @@ import { Footer } from './Footer';
 import { FooterArow } from './FooterArow';
 import { FooterBody } from './FooterBody';
 import { IconCompo } from './IconCompo';
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+
+import { CommonFooter } from './CommonFooter';
+import { LastIcon } from './LastIcon';
 
 export const Home = () => {
   const [show , setShow] = useState(false)
@@ -35,15 +33,16 @@ export const Home = () => {
   }
   return (
     <>
-    <section className=" bg-[#F0F7F7] ">
+    {/* section One part start */}
+    <section className=" bg-[#F0F7F7] pt-[68px] ">
       <div className="container">
-        <div className="pt-[68px] flex flex-col justify-center items-center mb-[113px] ">
+        <div className=" flex flex-col justify-center items-center mb-[113px] ">
           <div className="flex gap-[13px]">
             <img src="/images/land.svg" alt="icon" />
             <p> Bangladesh</p>
           </div>
           <div className="search-bar relative">
-            <IoSearchOutline className=" text-white bg-[#006565] p-3 w-[60px] h-[60px] rounded-full absolute  top-[14px] right-[1px] " />
+            <Link to="/searchPage"> <IoSearchOutline className=" text-white bg-[#006565] p-3 w-[60px] h-[60px] rounded-full absolute  top-[14px] right-[1px] " /></Link>
             <input className="mt-[12px] pt-[19px] pl-10 pb-[18px] pr-[652px] bg-white border-[2px] border-[#006565] rounded-[35px]" type="text" placeholder='What are you looking for?' />
           </div>
         </div>
@@ -87,7 +86,9 @@ export const Home = () => {
       </div>
     </div>
   </section>
+  {/*section One part end  */}
 
+  {/*section Two part start */}
   <section>
     <div className="container">
       <div className="w-full h-[124px] my-10 ">
@@ -140,7 +141,9 @@ export const Home = () => {
       </div>
     </div>
   </section>
+  {/* sectoin Two part end */}
 
+  {/* sectoin Three part start */}
   <section className="bg-[#F0F7F7] ">
     <div className="container">
       <div className="py-[41px] flex justify-between items-center ">
@@ -165,53 +168,11 @@ export const Home = () => {
         <CommonImage logo='/images/bird.png'/>
         <CommonImage logo='/images/sa.png'/>
       </div>
-      <div className="flex justify-around w-full pt-[46px] bg-white rounded-[10px]">
-         <div className=" ">
-           <Footer head='About e-Property' />
-           <FooterBody footer='About us'/>
-           <FooterBody footer='Terms & Conditions'/>
-           <FooterBody footer='Privacy Policy'/>
-           <FooterBody footer='Testimonials'/>
-           <FooterBody footer='Careers'/>
-         </div>
-         <div className=" ">
-            <Footer head='About e-Property' />
-            <FooterBody footer='Add your property'/>
-            <FooterBody footer='Post your requirements'/>
-            <FooterBody footer='Advertise with Us'/>
-            <FooterBody footer='Premium Developers'/>
-            <FooterBody footer='Careers'/>
-      </div>
-      <div className=" ">
-            <Footer head='Customer Services' />
-            <FooterBody footer='Frequently ask Question (FAQ)'/>
-            <FooterBody footer='Live Chat'/>
-            <FooterBody footer='Advertisement Tutorial'/>
-            <FooterBody footer='Contact Us'/>
-            <FooterBody footer='Email Us'/>
-      </div>
-      <div className="div">
-        <button className=" mb-1 py-[14px] text-white px-8 bg-gradient-to-r from-[#006565] to-[#00A8A8] rounded-[50px] text-[16px] font-medium font-roboto ">Add a Property</button>
-        <img className="w-[325px] h-[196px] " src="/images/building.png" alt="" />
-      </div>
-      </div>
+      <CommonFooter/>
     </div>
-    <div className="mt-[23px] flex justify-around pb-5 ">
-         <div className="logo flex justify-center items-center gap-1">
-            <img src="/images/home.svg" alt="icon" />
-            <h2 className=" text-xl font-medium font-poppins text-black "> e-Property </h2>
-         </div>
-         <div className="flex justify-center items-center gap-[15px] ">
-          <IconCompo icon={<FaFacebookF className="text-[#006565]  " />} />
-          <IconCompo icon={<FaTwitter className="text-[#006565]  " />} />
-          <IconCompo icon={<FaLinkedinIn className="text-[#006565]  " />} />
-          <IconCompo icon={<FaYoutube className="text-[#006565]  " />} />
-          <IconCompo icon={<FaInstagramSquare className="text-[#006565]  " />} />
-         </div>
-         <div className="text-[20px] text-[#E8A713] font-normal ">Copyright © e-Property</div>
-    </div>
+    <LastIcon/>
   </section>
-    
+    {/* sectoin Three part end */}
     
     </>
   )
