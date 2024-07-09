@@ -18,18 +18,18 @@ export const Navbar = () => {
         <div className="container">
            <div className="menu flex justify-between">
                <div className="logo flex justify-center items-center gap-1">
-                   <img src="public/images/home.svg" alt="icon" />
+                   <img src="/images/home.svg" alt="icon" />
                    <h2 className=" text-xl font-medium font-poppins text-black "> e-Property </h2>
                </div>
                <div className="menu-row flex justify-center items-center gap-10">
                    <ul className="flex justify-center items-center gap-10">
-                       <li className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-[#006565] text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="public/images/property.svg" alt="icon" /> Property</NavLink></li>
+                       <li className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-[#006565] text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="/images/property.svg" alt="icon" /> Property</NavLink></li>
 
-                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/landPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="public/images/land.svg" alt="icon" /> Land</NavLink></li>
+                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/landPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="/images/land.svg" alt="icon" /> Land</NavLink></li>
 
-                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/tenderPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="public/images/property.svg" alt="icon" /> Tender</NavLink></li>
+                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/tenderPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="/images/property.svg" alt="icon" /> Tender</NavLink></li>
 
-                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/auctionPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="public/images/Icon1.svg" alt="icon" /> Auction</NavLink></li>
+                       <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/auctionPage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <img className="w-[17px] h-[17px]" src="/images/Icon1.svg" alt="icon" /> Auction</NavLink></li>
 
                        <li className="text-[16px] font-semibold font-poppins text-[#006565]"><NavLink to="/servicePage"className={({ isActive }) =>isActive ? "flex justify-center items-center gap-[10px]  " : " flex justify-center items-center gap-[10px]"}> <IoSettingsOutline className="text-gradient-to-r from-[#006565] to-[#00A8A8]" /> Services</NavLink></li>
                    </ul>
