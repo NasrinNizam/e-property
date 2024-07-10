@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 import { FaHeart } from "react-icons/fa";
 
-export const ImageCard = ({color, image , place , detail , bed , bath ,size}) => {
-
-    const [icon , setIcon] = useState(false)
-
-    const handleIcon =()=>{
+export const AdImage = ({photo , bg , location ,urgent, border, details, bed , bath , size  }) => {
+    const [icon , setIcon] =useState(false)
+    const colorchange =()=>{
         setIcon(!icon)
     }
-
   return (
-    <div className={`pt-3 px-[15px] py-[17px] ${color}rounded-md w-[325px] mt-[25px] relative `}>
-        <img src={image} alt="photo" />
-        <h5 className="text-[14px] text-[#6D6D6D] font-poppins font-normal mb-1 mt-[14px] ">{place} </h5>
-        <h2 className=" mb-[11px]  text-[17px] text-[#042727] font-poppins font-medium ">{detail} </h2>
+    <>
+     <div className={`pt-3 px-[15px] py-[17px] ${bg} ${border} rounded-md w-[325px] mt-[25px] relative  border-2 overflow-hidden`}>
+        <div className="w-[105px] h-[95px] bg-transparent absolute top-[15px] left-[-28px] ">
+            <h2 className={`text-[16px] text-white font-poppins font-bold ${urgent} text-center -rotate-45 `}>Urgent</h2>
+        </div>
+        <img src={photo} alt="photo" />
+        <h5 className="text-[14px] text-[#6D6D6D] font-poppins font-normal mb-1 mt-[14px] flex justify-between ">{location} <span className="text-[16px] text-[#FF7A85] font-poppins font-medium ">ad</span> </h5>
+        <h2 className=" mb-[11px]  text-[17px] text-[#042727] font-poppins font-medium ">{details} </h2>
         <div className="flex justify-between">
             <div className="div1">
                 <div className="flex">
@@ -37,9 +38,10 @@ export const ImageCard = ({color, image , place , detail , bed , bath ,size}) =>
                 <h4 className="text-[14px] text-[#6D6D6D] font-poppins font-normal ">Flat Size(sft)</h4>
             </div>  
         </div>
-        <div onClick={handleIcon} className="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center absolute top-[23px] right-[32px] ">
+        <div onClick={colorchange} className="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center absolute top-[23px] right-[32px] ">
         {icon?  <FaHeart className="text-[#FF7A85]" /> : <FaHeart /> }
         </div>
     </div>
+    </>
   )
 }
