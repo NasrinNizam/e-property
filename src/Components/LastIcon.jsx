@@ -8,7 +8,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 export const LastIcon = () => {
   return (
     <div>
-        <div className="mt-[23px] flex justify-around pb-5 ">
+        <div className="mt-[23px] flex justify-between pb-5 ">
          <div className="logo flex justify-center items-center gap-1">
             <img src="/images/home.svg" alt="icon" />
             <h2 className=" text-xl font-medium font-poppins text-black "> e-Property </h2>

@@ -17,13 +17,9 @@ import { Location } from './Location';
 import { CommonSee } from './CommonSee';
 import { Link } from 'react-router-dom';
 import { CommonImage } from './CommonImage';
-import { Footer } from './Footer';
-import { FooterArow } from './FooterArow';
-import { FooterBody } from './FooterBody';
-import { IconCompo } from './IconCompo';
-
 import { CommonFooter } from './CommonFooter';
 import { LastIcon } from './LastIcon';
+import { PropertyType } from './PropertyType';
 
 export const Home = () => {
   const [show , setShow] = useState(false)
@@ -71,8 +67,36 @@ export const Home = () => {
       </div>
       <div className="mt-20 mb-[74px]">
         <div className="flex justify-between">
-          <Statistics icon={<ImHammer2  className="text-[#006565]"/>} heading='Auction'/>
-          <Statistics icon={<IoSettingsOutline  className="text-[#006565]"/>} heading='Services'/>
+         <div className="div">
+         <div className="flex gap-[208px] ">
+            <Statistics icon={<ImHammer2  className="text-[#006565]"/>} heading='Auction' />
+            <CommonSee/>
+          </div>
+          <div className="mx-[22px]">
+          <PropertyType color='text-[#E59F00]' text='Residential Flat' nbr='520' />
+          <PropertyType color='text-[#E59F00]' text='Commercial Flat' nbr='520' />
+          <PropertyType color='text-[#E59F00]' text='Residential Flat' nbr='520' />
+          <PropertyType color='text-[#E59F00]' text='Commercial Flat' nbr='520' />
+          <PropertyType color='text-[#E59F00]' text='Building & House' nbr='520' />
+          <PropertyType color='text-[#E59F00]' text='Others..' nbr='520' />
+          </div>
+         </div>
+
+         <div className="w-[440px]">
+         <div className="flex justify-between ">
+            <Statistics icon={<IoSettingsOutline className="text-[#006565]" />} heading='Services' />
+            <CommonSee/>
+          </div>
+          <div className="mx-[22px]">
+          <PropertyType color='text-[#006565]' text='Residential Flat' nbr='520' />
+          <PropertyType color='text-[#006565]' text='Commercial Flat' nbr='520' />
+          <PropertyType color='text-[#006565]' text='Residential Flat' nbr='520' />
+          <PropertyType color='text-[#006565]' text='Commercial Flat' nbr='520' />
+          <PropertyType color='text-[#006565]' text='Building & House' nbr='520' />
+          <PropertyType color='text-[#006565]' text='Others..' nbr='520' />
+          </div>
+         </div>
+
           <div className="w-[440px] h-[290px]">
             <img className="w-full h-full border-[1px] border-solid border-[#E8A713]" src="/images/building.png" alt="photo" />
           </div>
@@ -169,8 +193,8 @@ export const Home = () => {
         <CommonImage logo='/images/sa.png'/>
       </div>
       <CommonFooter/>
-    </div>
-    <LastIcon/>
+     <LastIcon/>
+   </div>
   </section>
     {/* sectoin Three part end */}
     
