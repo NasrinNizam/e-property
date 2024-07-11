@@ -11,6 +11,9 @@ import { SearchBar } from './SearchBar';
 import { AdImage } from './AdImage';
 import { CommonFooter } from './CommonFooter';
 import { LastIcon } from './LastIcon';
+import { Options } from './Options';
+import ReactPaginate from 'react-paginate';
+
 
 export const Search = () => {
   const [ads , setAds] =useState(true)
@@ -36,8 +39,8 @@ export const Search = () => {
           ' '
         }
         <p className="text-[14px] text-[#E6A206] font-normal font-poppins underline decoration-solid ml-[55px] "> Clear</p>
-        <div className="w-full pt-[15px] mb-[47px] px-4 pl-[22px] pb-4 bg-[#DFEEEE] rounded-[40px] flex justify-between items-center ">
-          <Keyword icon={<PiCrosshairThin />} head="Location" choice="Select city & country" />
+        <div className="w-full mb-[47px] h-20 px-4 bg-[#DFEEEE] rounded-[40px] flex justify-between items-center ">
+          <Keyword icon={<PiCrosshairThin />} head="Location" choice="Select city & country" rounded='rounded-tl-[40px]' option={<Options/>} />
           <Keyword icon={<FaRegCalendarAlt />} head="Rooms & Bathrooms" choice="Select rooms & bathrooms" />
           <Keyword icon={<PiNotebookFill />} head="Budget & Size" choice="Select your budget range" />
           <Keyword icon={<FaRegBuilding />} head="Property Type" choice="Select property types" />

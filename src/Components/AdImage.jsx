@@ -9,8 +9,8 @@ export const AdImage = ({photo , bg , location ,urgent, border, details, bed , b
   return (
     <>
      <div className={`pt-3 px-[15px] py-[17px] ${bg} ${border} rounded-md w-[325px] mt-[25px] relative  border-2 overflow-hidden`}>
-        <div className="w-[105px] h-[95px] bg-transparent absolute top-[15px] left-[-28px] ">
-            <h2 className={`text-[16px] text-white font-poppins font-bold ${urgent} text-center -rotate-45 `}>Urgent</h2>
+        <div className="w-[105px] h-[95px] bg-transparent absolute top-[15px] left-[-25px] ">
+            <h2 className={`text-[16px] text-white font-poppins px-3 font-bold ${urgent} text-center -rotate-45 `}>Urgent</h2>
         </div>
         <img src={photo} alt="photo" />
         <h5 className="text-[14px] text-[#6D6D6D] font-poppins font-normal mb-1 mt-[14px] flex justify-between ">{location} <span className="text-[16px] text-[#FF7A85] font-poppins font-medium ">ad</span> </h5>
