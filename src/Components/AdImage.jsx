@@ -10,6 +10,9 @@ import { FaRegBuilding } from "react-icons/fa";
 import { Options } from './Options';
 import { ImCross } from "react-icons/im";
 import { ImageCard } from './ImageCard';
+import { RoomDetail } from './RoomDetail';
+import { Slider } from './Slider';
+import { PropertySilder } from './PropertySilder';
 export const AdImage = () => {
 
 
@@ -73,8 +76,8 @@ export const AdImage = () => {
            <p className="text-[14px] text-[#E6A206] font-normal font-poppins underline decoration-solid ml-[55px] "> Clear</p>
            <div className="w-full mb-[47px] h-20 px-4 bg-[#DFEEEE] rounded-[40px] flex justify-between items-center ">
              <Keyword icon={<PiCrosshairThin />} head="Location" choice="Select city & country" rounded='rounded-tl-[40px]' option={<Options/>} />
-             <Keyword icon={<FaRegCalendarAlt />} head="Rooms & Bathrooms" choice="Select rooms & bathrooms" />
-             <Keyword icon={<PiNotebookFill />} head="Budget & Size" choice="Select your budget range" />
+             <Keyword icon={<FaRegCalendarAlt />} head="Rooms & Bathrooms" choice="Select rooms & bathrooms" option={<RoomDetail/>} />
+             <Keyword icon={<PiNotebookFill />} head="Budget & Size" choice="Select your budget range" option={<PropertySilder/>} />
              <Keyword icon={<FaRegBuilding />} head="Property Type" choice="Select property types" />
              <SearchBar/>
            </div>

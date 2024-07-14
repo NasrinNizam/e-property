@@ -12,7 +12,7 @@ export const Keyword = ({icon ,head , choice , rounded , option}) => {
 
 
 
-<div className={`flex gap-[10px] items-center relative p-3  ${detail? 'bg-white rounded-tl-[40px]' : 'bg-transparent' } `}>
+<div className={`flex gap-[10px] items-center relative p-3 rounded-lg ${rounded}  ${detail? 'bg-white ' : 'bg-transparent' } `}>
 <div className="text-2xl text-[#006565] ">{icon}</div>
   <div className="div relative">
     <h3 onClick={handleDetail} className="text-[16px] text-[#042727] font-poppins font-medium flex gap-[10px] items-center "> {head} <IoIosArrowDown /></h3>
