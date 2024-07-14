@@ -10,7 +10,7 @@ export const ImageCard = ({color, image , place , detail , bed , bath ,size}) =>
     }
 
   return (
-    <div className={`pt-3 px-[15px] py-[17px] ${color}rounded-md w-[325px] mt-[25px] relative `}>
+    <div className={`pt-3 px-[15px] py-[17px] ${color} bg-opacity-20 rounded-md w-[325px] mt-[25px] relative `}>
         <img src={image} alt="photo" />
         <h5 className="text-[14px] text-[#6D6D6D] font-poppins font-normal mb-1 mt-[14px] ">{place} </h5>
         <h2 className=" mb-[11px]  text-[17px] text-[#042727] font-poppins font-medium ">{detail} </h2>

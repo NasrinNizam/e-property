@@ -33,7 +33,7 @@ export const Home = () => {
     <section className=" bg-[#F0F7F7] pt-[68px] ">
       <div className="container">
         <div className=" flex flex-col justify-center items-center mb-[113px] ">
-          <div className="flex gap-[13px]">
+          <div className="flex gap-[13px] w-[820px] text-left">
             <img src="/images/land.svg" alt="icon" />
             <p> Bangladesh</p>
           </div>
@@ -42,28 +42,28 @@ export const Home = () => {
             <input className="mt-[12px] pt-[19px] pl-10 pb-[18px] pr-[652px] bg-white border-[2px] border-[#006565] rounded-[35px]" type="text" placeholder='What are you looking for?' />
           </div>
         </div>
-      <div className="flex justify-evenly">
-      <div className="single-type">
-        <Type icon='/images/property.svg' heading='Property'/>
-        <div className="flex gap-5 mt-4">
-        <CommonType icons={<FaBuildingWheat />} text='Residential' number='5305' color='bg-[#FFBC00]' />
-        <CommonType icons={<FaBuildingWheat />} text='Commercial' number='5305' color='bg-[#FFBC00]' />
+      <div className="flex justify-between ">
+        <div className="single-type">
+          <Type icon='/images/property.svg' heading='Property'/>
+          <div className="flex gap-4 mt-4">
+            <CommonType icons={<FaBuildingWheat />} text='Residential' number='5305' color='bg-[#FFBC00]' />
+            <CommonType icons={<FaBuildingWheat />} text='Commercial' number='5305' color='bg-[#FFBC00]' />
         </div>
-      </div>
-      <div className="single-type">
-        <Type icon='/images/land.svg' heading='Land'/>
-        <div className="flex gap-5 mt-4">
-        <CommonType icons={<FaBuildingWheat />} text='Land Share' number='5305' color='bg-[#006565]' />
-        <CommonType icons={<FaBuildingWheat />} text='Plot' number='5305' color= 'bg-[#006565]'/>
         </div>
-      </div>
-      <div className="single-type">
-        <Type icon='/images/Icon1.svg' heading='Tender'/>
-        <div className="flex gap-5 mt-4">
-        <CommonType icons={<FaBuildingWheat />} text='Government' number='5305' color='bg-[#FF7A85]' />
-        <CommonType icons={<FaBuildingWheat />} text='Corporate' number='5305' color='bg-[#FF7A85]' />
+        <div className="single-type">
+          <Type icon='/images/land.svg' heading='Land'/>
+          <div className="flex gap-5 mt-4">
+            <CommonType icons={<FaBuildingWheat />} text='Land Share' number='5305' color='bg-[#006565]' />
+            <CommonType icons={<FaBuildingWheat />} text='Plot' number='5305' color= 'bg-[#006565]'/>
+          </div>
         </div>
-      </div>
+        <div className="single-type">
+          <Type icon='/images/Icon1.svg' heading='Tender'/>
+          <div className="flex gap-5 mt-4">
+            <CommonType icons={<FaBuildingWheat />} text='Government' number='5305' color='bg-[#FF7A85]' />
+            <CommonType icons={<FaBuildingWheat />} text='Corporate' number='5305' color='bg-[#FF7A85]' />
+          </div>
+        </div>
       </div>
       <div className="mt-20 mb-[74px]">
         <div className="flex justify-between">

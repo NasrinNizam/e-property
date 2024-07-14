@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <nav className="h-[80px] flex justify-center items-center bg-white border-[#006565] border-[1px] ">
         <div className="container">
-           <div className="menu flex justify-around flex-wrap">
+           <div className="menu flex justify-between flex-wrap">
                <div className="logo flex justify-center items-center gap-1">
                    <img src="/images/home.svg" alt="icon" />
                    <h2 className=" text-xl font-medium font-poppins text-black "> e-Property </h2>
